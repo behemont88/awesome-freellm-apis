@@ -26,6 +26,20 @@ body:
       placeholder: https://...
     validations:
       required: true
+
+  - type: input
+    id: base_url
+    attributes:
+      label: API Base URL
+      description: The provider's API endpoint, if it exposes one.
+      placeholder: https://api.example.com/v1
+
+  - type: input
+    id: api_key_url
+    attributes:
+      label: API Key Signup URL
+      description: The official page where users can create or view an API key.
+      placeholder: https://example.com/settings/api-keys
       
   - type: textarea
     id: free_quota
@@ -44,6 +58,38 @@ body:
       placeholder: e.g., Llama 3 (8B, 70B), Mixtral 8x7B
     validations:
       required: true
+
+  - type: input
+    id: max_context
+    attributes:
+      label: Maximum Context Window
+      description: The largest supported context window for a free model, if known.
+      placeholder: e.g., 128K or 1M
+
+  - type: dropdown
+    id: credit_card
+    attributes:
+      label: Credit Card Required?
+      options:
+        - "No"
+        - "Yes"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: input
+    id: verification
+    attributes:
+      label: Account Verification
+      description: Required verification such as email, phone, or registration.
+      placeholder: e.g., Email or phone verification
+
+  - type: input
+    id: protocols
+    attributes:
+      label: Verified API Protocols
+      description: For example, OpenAI Chat Completions or Google generateContent.
+      placeholder: e.g., OpenAI Chat Completions
 
   - type: textarea
     id: extra_notes

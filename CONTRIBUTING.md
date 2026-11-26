@@ -13,13 +13,30 @@ This repository is dedicated to APIs that offer **genuine free tiers** for devel
 - We welcome services that have paid tiers, provided they have a distinct, usable free tier.
 
 ### 2. Formatting Your Contribution
-When adding a new API to the list, please ensure you use the existing Markdown table format.
+When submitting a new API, include the details needed to maintain the provider
+directory accurately:
 
-**Example Entry:**
-```markdown
-| Provider | Free Quota | Models | Require CC | Note |
-| --- | --- | --- | --- | --- |
-| [Provider Name](URL) | 100k tokens / day | Llama-3 | No | Some useful note |
+- Provider name and official website
+- OpenAI-compatible or other API base URL
+- API-key signup URL
+- Free quota or rate-limit details
+- Notable free models
+- Maximum context window
+- Whether a credit card or phone verification is required
+- Verified API protocols
+
+**Example submission details:**
+```text
+Provider: Example AI
+Website: https://example.com
+Base URL: https://api.example.com/v1
+API Key: https://example.com/settings/api-keys
+Free Quota: 60 requests per minute
+Models: Example 70B
+Max Context: 128K
+Credit Card: No
+Verification: Email
+Protocols: OpenAI Chat Completions
 ```
 
 ### 3. Global Project
